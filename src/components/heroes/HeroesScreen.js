@@ -1,9 +1,15 @@
 import React from 'react'
+import {Heroe} from './Heroe'
 
-export const HeroesScreen = () => {
+export const HeroesScreen = ({heroes}) => {
+    console.log(heroes);
     return (
-        <div>
-            <h1>HEROES SCREEN</h1>
+        <div className="row">
+            {heroes.map((item)=>(
+                <div key={item.id} className="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <Heroe {...item} />
+                </div>
+            ))}
         </div>
     )
 }

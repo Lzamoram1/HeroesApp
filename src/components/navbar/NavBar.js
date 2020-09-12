@@ -18,7 +18,7 @@ export const NavBar = () => {
                 <div className="text-right">
 
                     <NavLink to="/logout" className="nav-link">LOGOUT<span className="sr-only">(current)</span></NavLink>
-                </div>
+                    </div>
 
             </div>
         </nav>
